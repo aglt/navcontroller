@@ -41,11 +41,11 @@ class MainFragment : Fragment() {
     private fun displayView(m: MainViewModel) {
         viewHolder.message.text = m.message
         viewHolder.playGameButton.text = m.buttonText
-        viewHolder.playGameButton.setOnClickListener({ Navigation.createNavigateOnClickListener(R.id.nav_action_next) })
+
 //        viewHolder.playGameButton.setOnClickListener{ view ->
 //            view.findNavController().navigate(R.id.viewTransactionsAction)
 //        }
-//        viewHolder.playGameButton.setOnClickListener({ NavHostFragment.findNavController(this).navigate(R.id.nav_action_next) })
+        viewHolder.playGameButton.setOnClickListener({ NavHostFragment.findNavController(this).navigate(R.id.nav_action_next) })
 
 //        viewHolder.playGameButton.setOnClickListener { view ->
 //            view.findNavController().navigate(R.id.go_to_step_one)
